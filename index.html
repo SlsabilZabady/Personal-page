@@ -1,0 +1,236 @@
+<! DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Personal Page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet"  type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="C:\git\all.css">
+        <script >
+               window.smoothScroll = function(target) {
+        var scrollContainer = target;
+        do { //find scroll container
+            scrollContainer = scrollContainer.parentNode;
+            if (!scrollContainer) return;
+            scrollContainer.scrollTop += 1;
+        } while (scrollContainer.scrollTop == 0);
+
+        var targetY = 0;
+        do { //find the top of target relatively to the container
+            if (target == scrollContainer) break;
+            targetY += target.offsetTop;
+        } while (target = target.offsetParent);
+
+        scroll = function(c, a, b, i) {
+            i++; if (i > 30) return;
+            c.scrollTop = a + (b - a) / 30 * i;
+            setTimeout(function(){ scroll(c, a, b, i); }, 20);
+        }
+        // start scrolling
+        scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    }
+        </script>
+    </head>
+    <body>
+        <header>
+            
+            <div id="image">
+                <img src="image/web-Design.jpg" alt="image">
+                <div class="container">
+                    <h2 id="page">Wed &#38; Graphic Designer</h2>
+                </div>
+            </div>
+            <nav>
+              <div class="container">
+                   <h2 id="logo"><span>Be</span>lla</h2>
+                   <ul>
+                            <li id="home">Home</li>
+                            <li onclick="smoothScroll(document.getElementById('about-me'))">About Me</li>
+                            <li onclick="smoothScroll(document.getElementById('resume'))">Resume</li>
+                            <li onclick="smoothScroll(document.getElementById('skill'))">Skills</li>
+                            <li onclick="smoothScroll(document.getElementById('port'))">Portfolio</li>
+                            <li onclick="smoothScroll(document.getElementById('footer'))">Contact Me</li>
+                        </ul>
+              </div>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <section class="section1">
+                    <div class="container">
+                        <div id="photo">
+                            <img src="image/coder-job-avatar-profile-128.png" alt="photo">
+                        </div>
+                        <div class="about-me" id="about-me">
+                            <h2>About Me</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
+                                laoreet diam id, gravida urna. Integer rhoncus neque nisl. Nulla sollicitudin erat at congue facilisis.
+                            </p>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
+                                laoreet diam id, gravida urna. Integer rhoncus neque nisl. Nulla sollicitudin erat at congue facilisis.
+                            </p>
+                            <div class="hobbies">
+ 
+                                <div>
+                                     <h3>WED DESIGN</h3>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    </p>
+                                </div>
+                                 <div>
+                                     <h3>GRAPHIC DESIGN</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
+                                
+                                 </p>
+                                </div>
+                                 <div>
+                                     <h3>PHOTOGRPHY</h3>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
+                                laoreet diam id, gravida urna.
+                                 </p>
+                                </div>
+                                 <div>
+                                     <h3>READING</h3>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
+                                laoreet diam id, gravida urna.
+                                 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <br><br>
+                <section class="my-skills" id="skill">
+                    <div class="container">
+                        <div id="skills">
+                            <h2>My Skills</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
+                           laoreet diam id, gravida urna. Integer rhoncus neque nisl. Nulla sollicitudin erat at congue facilisis.
+                            </p>
+                        </div>
+                        <div id="progress">
+                            <div class="tech">
+                                <h3>PHOTOSHOP</h3>
+                                <div><span style="width: 90%">90%</span></div>
+                                <h3>illustrator</h3>
+                                <div><span style="width: 30%">30%</span></div>
+                                <h3>html\css</h3>
+                                <div><span style="width: 75%">75%</span></div>
+                                <h3>adobe xd</h3>
+                                <div><span style="width: 80%">80%</span></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class="resume" id="resume">
+                    <div class="container">
+                            <h2>Resume</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
+                           laoreet diam id, gravida urna. Integer rhoncus neque nisl. Nulla sollicitudin erat at congue facilisis.
+                            </p>
+                        <button>Download Resume</button>
+                    </div>
+                </section>
+                <section class="my-edu" id="edu">
+                    <div class="container">
+                        <div id="main">
+                            <h2>Education</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
+                           laoreet diam id, gravida urna. Integer rhoncus neque nisl. Nulla sollicitudin erat at congue facilisis.
+                            </p>
+                        </div>
+                            <div class="diplome">
+                                 <div class="certificate">
+                                       <h3>Graphic Design Diploma</h3>
+                                       <p>Reeves College  /  June 2008 - May 2010</p>
+                                       <span>4.0 GPA</span>
+
+                                       <hr>
+                                       <p class="paraLineHeight">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+
+                                 </div>
+                                 <div class="certificate">
+                                     <h3>CIT Diploma</h3>
+                                     <p>Lethbridge College  /  June 2006 - May 2008</p>
+                                     <span>4.0 GPA</span>
+
+                                     <hr>
+                                     <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+                               </div>
+                               </div>
+                        </div>
+                    
+                    
+                <div class="clearfix"></div>
+                <hr>
+                    <div class="container">
+                        <div id="main">
+                            <h2>Work Experience</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
+                           laoreet diam id, gravida urna. Integer rhoncus neque nisl. Nulla sollicitudin erat at congue facilisis.
+                            </p>
+                        </div>
+                        <div class="rightexp">
+                             <div class="certificate">
+                                   <h3>Lead WEb Designer</h3>
+                                   <p>ABC Company, Saskatoon  /  June 2011 - Present</p>
+                                   <span>3 Years</span>
+
+                                   <hr>
+                                   <p class="paraLineHeight">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+
+                             </div>
+                             <div class="certificate">
+                                   <h3>Web Developer</h3>
+                                   <p>The Company, Lethbridge  /  June 2007 - May 2008</p>
+                                   <span>1 Years</span>
+
+                                   <hr>
+                                   <p class="paraLineHeight">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+
+                             </div>
+                             <div class="certificate">
+                                   <h3>Junior Designer</h3>
+                                   <p>XYZ Company, Lethbridge  /  June 2008 - May 2009</p>
+                                   <span>1 Years</span>
+
+                                   <hr>
+                                   <p class="paraLineHeight">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+
+                                 </div>
+                           </div>
+                    </div>
+                </section>
+                <section class="portfolio" id="port">
+                    <div class="container">
+                         <h2>Portfolio</h2>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
+                           laoreet diam id, gravida urna. Integer rhoncus neque nisl. Nulla sollicitudin erat at congue facilisis.
+                        </p>
+                        <div class="my-work">
+                            <div><img src="image/%D9%85%D8%B9%D8%A7%D9%8A%D8%AF%D8%A9%20%D8%A5%D8%AB%D9%85%D8%A7%D8%B1.jpg"></div>
+                             <div><img src="image/%D8%AA%D9%87%D9%86%D8%A6%D8%A9%20%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg"></div>
+                             <div><img src="image/logo-shabat-4.jpg"></div>
+                             <div><img src="image/screencapture-file-C-git-index-html-2019-12-08-02_51_17.png"></div>
+                             <div><img src="image/screencapture-file-C-git-About-index-html-2019-12-14-00_28_24.png"></div>
+                            <div><img src="image/%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9.png"></div>
+                             
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+      <footer id="footer">
+          <div class="container">
+              <p>Copyright &copy; 2019 Bella<p>
+              <ul>
+                  <li><a href="http://facebook.com " target="_blank"><img src="image/facebook-5-32.png"></a></li>
+                  <li><a href="http://instagram.com " target="_blank"><img src="image/instagram-5-32.png"></a></li>
+                  <li><a href="http://github.com " target="_blank"><img src="image/github-10-32.png"></a></li>
+                  <li><a href="http://behance.com " target="_blank"><img src="image/behance-5-32.png"></a></li>
+                  <li><a href="http://linkedin.com " target="_blank"><img src="image/linkedin-5-32.png"></a></li>
+              </ul>
+          </div>
+        </footer>
+    </body>
+</html>
