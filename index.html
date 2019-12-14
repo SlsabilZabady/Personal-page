@@ -4,7 +4,6 @@
         <title>Personal Page</title>
         <meta charset="utf-8">
         <link rel="stylesheet"  type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="C:\git\all.css">
         <script >
                window.smoothScroll = function(target) {
         var scrollContainer = target;
@@ -31,19 +30,19 @@
         </script>
     </head>
     <body>
-        <header>
+        <header id="header">
             
-            <div id="image">
+            <div id="image" onclick="smoothScroll(document.getElementById('navbar'))">
                 <img src="image/web-Design.jpg" alt="image">
                 <div class="container">
                     <h2 id="page">Wed &#38; Graphic Designer</h2>
                 </div>
             </div>
-            <nav>
+            <nav id="navbar">
               <div class="container">
                    <h2 id="logo"><span>Be</span>lla</h2>
                    <ul>
-                            <li id="home">Home</li>
+                            <li id="home"onclick="smoothScroll(document.getElementById('header'))">Home</li>
                             <li onclick="smoothScroll(document.getElementById('about-me'))">About Me</li>
                             <li onclick="smoothScroll(document.getElementById('resume'))">Resume</li>
                             <li onclick="smoothScroll(document.getElementById('skill'))">Skills</li>
@@ -60,7 +59,7 @@
                         <div id="photo">
                             <img src="image/coder-job-avatar-profile-128.png" alt="photo">
                         </div>
-                        <div class="about-me" id="about-me">
+                        <div class="about-me" id="about-me" onclick="smoothScroll(document.getElementById('navbar'))">
                             <h2>About Me</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
                                 laoreet diam id, gravida urna. Integer rhoncus neque nisl. Nulla sollicitudin erat at congue facilisis.
@@ -99,7 +98,7 @@
                     </div>
                 </section>
             <br><br>
-                <section class="my-skills" id="skill">
+                <section class="my-skills" id="skill"onclick="smoothScroll(document.getElementById('navbar'))" >
                     <div class="container">
                         <div id="skills">
                             <h2>My Skills</h2>
@@ -122,7 +121,7 @@
                         
                     </div>
                 </section>
-                <section class="resume" id="resume">
+                <section class="resume" id="resume" onclick="smoothScroll(document.getElementById('navbar'))">
                     <div class="container">
                             <h2>Resume</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
@@ -131,7 +130,7 @@
                         <button>Download Resume</button>
                     </div>
                 </section>
-                <section class="my-edu" id="edu">
+                <section class="my-edu" id="edu"onclick="smoothScroll(document.getElementById('navbar'))">
                     <div class="container">
                         <div id="main">
                             <h2>Education</h2>
@@ -201,7 +200,7 @@
                            </div>
                     </div>
                 </section>
-                <section class="portfolio" id="port">
+                <section class="portfolio" id="port" onclick="smoothScroll(document.getElementById('navbar'))">
                     <div class="container">
                          <h2>Portfolio</h2>
                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pretium mi. Sed ac urna elementum, 
@@ -220,7 +219,7 @@
                 </section>
             </article>
         </main>
-      <footer id="footer">
+      <footer id="footer" onclick="smoothScroll(document.getElementById('navbar'))">
           <div class="container">
               <p>Copyright &copy; 2019 Bella<p>
               <ul>
