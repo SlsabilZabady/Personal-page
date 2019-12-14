@@ -222,7 +222,7 @@ nav ul li:hover {
 }
 
 .my-edu .container .diplome .certificate {
-    margin-top: 43px;
+    margin-top: 45px;
 }
 .my-edu .container .diplome .certificate span {
     background: rgb(54, 181, 176);
@@ -237,6 +237,9 @@ nav ul li:hover {
     background: rgb(54, 181, 176);
     color: #fff;
     padding: 3px 8px;
+}
+.my-edu .container .rightexp .certificate {
+    margin-top: 45px;
 }
 
 .portfolio{
