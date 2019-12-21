@@ -331,10 +331,15 @@ footer ul li i{
 footer ul li i:hover {
    color: white;
 }
-@media only screen and (min-width: 300px) {
-
+@media only screen and (min-width: 600px) {
+    
 .container {
     width: 80%;
     margin: auto;    
 }
+}
+@media only screen and (max-width: 600px){
+    .resume > p {
+        font-size: 5pt;
+    }
 }
