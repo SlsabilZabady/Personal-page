@@ -4,6 +4,7 @@
         <title>Personal Page</title>
         <meta charset="utf-8">
         <link rel="stylesheet"  type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/8bea9e22aa.js" crossorigin="anonymous"></script>
         <script >
                window.smoothScroll = function(target) {
         var scrollContainer = target;
@@ -44,7 +45,14 @@
                    <ul>
                             <li id="home"onclick="smoothScroll(document.getElementById('header'))">Home</li>
                             <li onclick="smoothScroll(document.getElementById('about-me'))">About Me</li>
-                            <li onclick="smoothScroll(document.getElementById('resume'))">Resume</li>
+                            <li onclick="smoothScroll(document.getElementById('resume'))">Resume
+                                <div class="sub-nemu">
+                                    <ul>
+                                        <li><a href="#main" >Education</a></li>
+                                        <li><a href="#main">Work Experince</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li onclick="smoothScroll(document.getElementById('skill'))">Skills</li>
                             <li onclick="smoothScroll(document.getElementById('port'))">Portfolio</li>
                             <li onclick="smoothScroll(document.getElementById('footer'))">Contact Me</li>
@@ -139,7 +147,7 @@
                             </p>
                         </div>
                             <div class="diplome">
-                                 <div class="certificate">
+                                 <div class="certificate" id="certificate">
                                        <h3>Graphic Design Diploma</h3>
                                        <p>Reeves College  /  June 2008 - May 2010</p>
                                        <span>4.0 GPA</span>
@@ -223,11 +231,11 @@
           <div class="container">
               <p>Copyright &copy; 2019 Bella<p>
               <ul>
-                  <li><a href="http://facebook.com " target="_blank"><img src="image/facebook-5-32.png"></a></li>
-                  <li><a href="http://instagram.com " target="_blank"><img src="image/instagram-5-32.png"></a></li>
-                  <li><a href="http://github.com " target="_blank"><img src="image/github-10-32.png"></a></li>
-                  <li><a href="http://behance.com " target="_blank"><img src="image/behance-5-32.png"></a></li>
-                  <li><a href="http://linkedin.com " target="_blank"><img src="image/linkedin-5-32.png"></a></li>
+                  <li><a href="http://facebook.com " target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                  <li><a href="http://instagram.com " target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="http://github.com " target="_blank"><i class="fab fa-github-square"></i></a></li>
+                  <li><a href="http://behance.com " target="_blank"><i class="fab fa-behance-square"></i></a></li>
+                  <li><a href="http://linkedin.com " target="_blank"><i class="fab fa-linkedin"></i></a></li>
               </ul>
           </div>
         </footer>
