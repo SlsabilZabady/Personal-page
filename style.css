@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 * {box-sizing: border-box;}
 
 body {
@@ -24,27 +25,26 @@ body p {
 }
 .clearfix{clear: both;}
  .container #page {
-    display: inline;
+    display: inline-block;
     text-transform: uppercase;
     padding: 100px;
     position: absolute;
      top: 25%;
      width:90%;
      text-align: center;
-     font-family: 'Solway', serif;
+     font-family: 'Muli', sans-serif;
      font-size: 65px;
-   text-decoration-line: underline;
      color: white;
      text-shadow: 3px 3px #f09595;
      
 }
 
 img[alt="image"] {
-    width: 1349px;
-    height: 695px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     opacity: 0.5;
-    display: inline;
+    display: inline-block;
     
 }
 #image {
@@ -93,6 +93,28 @@ nav ul li:hover {
      background-color: #FFFFFF;
     color: #f09595;
     border-radius: 20px;
+}
+.sub-nemu{
+    display: none;
+}
+nav ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: #f09595;
+    margin-top: 15px;
+    margin-left: -15px; 
+}
+nav ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+nav ul li:hover .sub-menu ul li {
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
 }
 .section1 {
     overflow: hidden;
@@ -280,8 +302,18 @@ footer p:hover {
 footer ul {
     list-style: none;
     padding-left: 0;
+    
 }
 footer ul li {
     display: inline-block;
+    
+}
+footer ul li i{
+    
+    margin: 5px;
     color: #f09595;
+    overflow: hidden;
+}
+footer ul li i:hover {
+   color: white;
 }
