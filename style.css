@@ -266,10 +266,14 @@ nav ul li:hover .sub-menu ul li {
 
 .portfolio{
     text-align: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 70px;
+    padding-top: 50px;
     background-color: #FEE9E1;
     
+}
+.portfolio p {
+    line-height: 1.7;
+    margin-bottom: 30px;
 }
 .portfolio .my-work {
     overflow: hidden;
@@ -282,6 +286,10 @@ nav ul li:hover .sub-menu ul li {
 .portfolio .my-work > div img {
     width: 92%;
     margin: 10px;
+    padding: 3px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 10px 10px 12px #ccc;
 }
 footer {
     text-align: center;
